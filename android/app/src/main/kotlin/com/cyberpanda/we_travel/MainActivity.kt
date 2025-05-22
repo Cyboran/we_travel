@@ -1,4 +1,4 @@
-package com.example.we_travel
+package com.cyberpanda.we_travel
 
 import io.flutter.embedding.android.FlutterActivity
 

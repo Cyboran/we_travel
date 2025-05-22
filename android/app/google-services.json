@@ -7,12 +7,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:492937032771:android:038bf390c4149449e690f6",
+        "mobilesdk_app_id": "1:492937032771:android:e93733383143e930e690f6",
         "android_client_info": {
-          "package_name": "com.example.we_travel"
+          "package_name": "com.cyberpanda.we_travel"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "492937032771-m3224nm7kn83qogcdqs75ndf3cd2ccbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cyberpanda.we_travel",
+            "certificate_hash": "f49863e3d8da1e97b4b529a64fbeee05bbd9d2b5"
+          }
+        },
+        {
+          "client_id": "492937032771-4m8mv4cc4qhrkv1mn8mk53b2npm1gihi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyA0EXlKEdWiIOFY1XyE4J8UjR5Gxi1HRik"
@@ -20,7 +33,55 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492937032771-4m8mv4cc4qhrkv1mn8mk53b2npm1gihi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "492937032771-sl68duom4vv5gtokbf8kttd79qhnp5g6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.weTravel"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492937032771:android:038bf390c4149449e690f6",
+        "android_client_info": {
+          "package_name": "com.example.we_travel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492937032771-4m8mv4cc4qhrkv1mn8mk53b2npm1gihi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0EXlKEdWiIOFY1XyE4J8UjR5Gxi1HRik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492937032771-4m8mv4cc4qhrkv1mn8mk53b2npm1gihi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "492937032771-sl68duom4vv5gtokbf8kttd79qhnp5g6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.weTravel"
+              }
+            }
+          ]
         }
       }
     }
