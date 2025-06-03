@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../services/trip_service.dart';
 import '../../models/trip.dart';
 import '../../widgets/trip_card.dart';
@@ -32,12 +33,21 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Row(
           children: [
-            Image.asset('assets/images/logo.png', height: 32),
-            const SizedBox(width: 8),
-            const Text('WeTravel'),
+            SvgPicture.asset(
+              'assets/images/logo.svg',
+              height: 60,
+            ),
+            const SizedBox(width: 24),
+            const Text('WeTravel',
+                style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold)),
             const Spacer(),
             IconButton(
-              icon: const Icon(Icons.add),
+              icon: const Icon(Icons.add, size: 36),
+              style: IconButton.styleFrom(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+                shape: const CircleBorder(),
+              ),
               onPressed: _addTrip,
               tooltip: 'Add Trip',
             ),
@@ -53,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 hintText: 'Search trips...',
                 prefixIcon: Icon(Icons.search),
               ),
+              style: const TextStyle(fontSize: 22),
               onChanged: (value) {
                 setState(() {
                   _searchQuery = value.toLowerCase();
@@ -71,13 +82,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 if (!snapshot.hasData || snapshot.data!.isEmpty) {
                   return const Center(
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 24.0),
+                      padding: EdgeInsets.symmetric(horizontal: 60.0),
                       child: Text(
-                        'No trips found!\nPlease add a new trip using the + button in the top right.',
+                        'No trips found!\n\nPlease add a new trip using the + button in the top right.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.grey,
-                          fontSize: 16,
+                          fontSize: 24,
                         ),
                       ),
                     ),

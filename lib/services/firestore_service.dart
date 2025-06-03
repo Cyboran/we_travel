@@ -11,4 +11,16 @@ class FirestoreService {
     }
     return user.uid;
   }
+
+  /// Returns the current user's display name or a default value if not set
+  String getCurrentUserDisplayName() {
+    final user = _auth.currentUser;
+    return user?.displayName ?? 'Traveler';
+  }
+
+  /// Returns the current user's email or a default value if not set
+  String getCurrentUserEmail() {
+    final user = _auth.currentUser;
+    return user?.email ?? 'No email';
+  }
 }
