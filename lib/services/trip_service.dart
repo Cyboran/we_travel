@@ -72,4 +72,17 @@ class TripService {
         .doc(tripId)
         .update({'isArchived': false});
   }
+
+  /// Returns a stream of the trip's timeline, which is a mix of Stops and TransportSegments
+  Stream<List<dynamic>> getTimelineForTrip(String tripId) {
+    return _db
+        .collection('users')
+        .doc(_userId)
+        .collection('trips')
+        .doc(tripId)
+        .collection('timeline')
+        .snapshots()
+        .map((snapshot) =>
+            snapshot.docs.map((doc) => doc.data()).toList());
+  }
 }

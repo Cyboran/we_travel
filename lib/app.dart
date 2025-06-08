@@ -26,7 +26,7 @@ class WeTravelApp extends StatelessWidget {
       
       // Navigation using named routes 
       initialRoute: AppRouter.initialRoute,
-      routes: AppRouter.routes,
+      onGenerateRoute: AppRouter.generateRoute,
     );
   }
 }

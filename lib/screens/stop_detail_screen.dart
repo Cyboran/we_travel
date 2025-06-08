@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:we_travel/models/stop.dart';
 
 class StopDetailScreen extends StatelessWidget {
-  const StopDetailScreen({super.key});
+  final Stop stop;
+
+  const StopDetailScreen({super.key, required this.stop});
 
   @override
   Widget build(BuildContext context) {
